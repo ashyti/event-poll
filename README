@@ -1,0 +1,31 @@
+input event name discovery
+==================================================
+
+by Andi Shyti <andi.shyti@samsung.com> 
+
+Overview
+--------
+This program prints the input events name by opening each /dev/input/eventX
+device, running an ioctl for fetching the name and printing it.
+
+Compile
+-------
+
+  $ make
+  $ ./ep
+
+a possible output could be:
+
+  event0 is Cherry GmbH wired keyboard
+  event1 is Cherry GmbH wired keyboard
+  event10 is HDA Intel PCH Line Out
+  event11 is HDA Intel PCH Front Headphone
+  event12 is HDA NVidia HDMI/DP,pcm=3
+  event13 is HDA NVidia HDMI/DP,pcm=7
+  event2 is PixArt USB Optical Mouse
+  event3 is Power Button
+  event4 is Power Button
+  event6 is Video Bus
+  event7 is HDA Intel PCH Front Mic
+  event8 is HDA Intel PCH Rear Mic
+  event9 is HDA Intel PCH Line
